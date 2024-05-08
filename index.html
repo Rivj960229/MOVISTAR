@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Venta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Venta</h1>
+        <form id="formularioVenta">
+            <div class="form-group">
+                <label for="asesor">Asesor:</label>
+                <input type="text" id="asesor" name="asesor" required>
+            </div>
+            <div class="form-group">
+                <label for="ciudad">Ciudad de venta:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+            </div>
+            <div class="form-group">
+                <label for="nombreCliente">Nombre del cliente (Completo):</label>
+                <input type="text" id="nombreCliente" name="nombreCliente" required>
+            </div>
+            <div class="form-group">
+                <label for="ccCliente">CC Cliente:</label>
+                <input type="text" id="ccCliente" name="ccCliente" required>
+            </div>
+            <div class="form-group">
+                <label for="fechaExpedicion">Fecha de expedición cliente:</label>
+                <input type="date" id="fechaExpedicion" name="fechaExpedicion" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono1">Teléfono contacto 1:</label>
+                <input type="tel" id="telefono1" name="telefono1" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono2">Teléfono contacto 2:</label>
+                <input type="tel" id="telefono2" name="telefono2">
+            </div>
+            <div class="form-group">
+                <label for="emailCliente">Email del cliente:</label>
+                <input type="email" id="emailCliente" name="emailCliente" required>
+            </div>
+            <div class="form-group">
+                <label for="direccionInstalacion">Dirección de instalación:</label>
+                <input type="text" id="direccionInstalacion" name="direccionInstalacion" required>
+            </div>
+            <div class="form-group">
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento">
+            </div>
+            <div class="form-group">
+                <label for="barrio">Barrio:</label>
+                <input type="text" id="barrio" name="barrio" required>
+            </div>
+            <div class="form-group">
+                <label for="segmento">Segmento:</label>
+                <input type="text" id="segmento" name="segmento" required>
+            </div>
+            <div class="form-group">
+                <label for="tipoOferta">Tipo de oferta:</label>
+                <input type="text" id="tipoOferta" name="tipoOferta" required>
+            </div>
+            <div class="form-group">
+                <label for="codigoOferta">Código de oferta (FMC):</label>
+                <input type="text" id="codigoOferta" name="codigoOferta" required>
+            </div>
+            <div class="form-group">
+                <label for="valorOferta">Valor oferta:</label>
+                <input type="text" id="valorOferta" name="valorOferta" required>
+            </div>
+            <div class="form-group">
+                <label for="serviciosAdicionales">Servicios adicionales:</label>
+                <input type="text" id="serviciosAdicionales" name="serviciosAdicionales">
+            </div>
+            <div class="form-group">
+                <label for="nombreReferencia">Referencia personal (Nombre):</label>
+                <input type="text" id="nombreReferencia" name="nombreReferencia" required>
+            </div>
+            <div class="form-group">
+                <label for="contactoReferencia">Contacto referencia personal:</label>
+                <input type="tel" id="contactoReferencia" name="contactoReferencia" required>
+            </div>
+            <div class="form-group">
+                <label for="fechaInstalacion">Fecha de instalación deseada:</label>
+                <input type="date" id="fechaInstalacion" name="fechaInstalacion" required>
+            </div>
+            <div class="form-group">
+                <label for="jornadaInstalacion">Jornada deseada para la instalación:</label>
+                <select id="jornadaInstalacion" name="jornadaInstalacion" required>
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+            <!-- Añade aquí los campos restantes según los proporcionados -->
+
+            <button type="submit">Enviar</button>
+        </form>
+        <button id="botonCopiar">Copiar Datos</button>
+        <textarea id="datosCopiados" readonly></textarea>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
